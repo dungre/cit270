@@ -1,0 +1,18 @@
+{
+    "name": "270-rest-api",
+    "version": "1.0.0",
+    "description": "CIT 270 API",
+    "main": "server.js",
+    "dependencies": {
+        "body-parser": "^1.19.1",
+        "express": "^4.17.2",
+        "fs": "0.0.1-security",
+        "https": "^1.0.0",
+        "md5": "^2.3.0"
+    },
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "Sean Murdock",
+    "license": "ISC"
+}
