@@ -7,6 +7,8 @@ const md5 = require('md5');
 const app = express();
 app.use(bodyParser.json());
 
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
     res.send('Hello HTTPS');
 });
