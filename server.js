@@ -6,6 +6,7 @@ const port = 443;
 const md5 = require('md5');
 const app = express();
 app.use(bodyParser.json());
+
 app.get('/', (req, res) => {
     res.send('Hello HTTPS');
 });
@@ -17,7 +18,8 @@ https.createServer({
   });
 app.post('/login', (req,res) =>{
     console.log(JSON.stringify(req.body));
-    if(req.body.userName == "A" && md5(req.body.password) == "9d5ed678fe57bcca610140957afab571"){
+    console.log("Here is the password " + req.body.password)
+    if(req.body.userName == "yeju" && md5(req.body.password) == "161ebd7d45089b3446ee4e0d86dbcf92"){
         res.send("Welcome!")
     } else{
         res.send("New API who dis?");
